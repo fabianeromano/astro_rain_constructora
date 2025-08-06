@@ -37,14 +37,12 @@ export default function ConstructoraLanding() {
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center pl-2">
+          <div className="flex items-center pl-4 md:pl-6">
             <img
               src={LogoNameV1.src}
               alt="Logo de la Constructora"
               className="w-auto h-10"
             />
-            {/* <Building2 className="h-8 w-8 text-orange-600" />
-            <span className="text-xl font-bold text-gray-900">Rain</span> */}
           </div>
           <nav className="hidden md:flex items-center space-x-6">
             <a
@@ -68,8 +66,8 @@ export default function ConstructoraLanding() {
               Contacto
             </a>
           </nav>
-          <Button className="bg-orange-600 hover:bg-orange-700">
-            Cotizar Proyecto
+          <Button className="bg-orange-600 hover:bg-orange-700 mr-4 lg:mr-0">
+            <a href="#contacto">Cotizar Proyecto</a>
           </Button>
         </div>
       </header>
@@ -361,7 +359,7 @@ export default function ConstructoraLanding() {
               <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
                 {/* María Inés Pisculichi */}
                 <Card className="border-orange-100 hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6 text-center">
+                  <CardContent className="p-2 text-center">
                     <div className="mb-4">
                       <img
                         src={socio_1.src}
@@ -385,7 +383,7 @@ export default function ConstructoraLanding() {
 
                 {/* Rafael Rotger */}
                 <Card className="border-orange-100 hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6 text-center">
+                  <CardContent className="p-2 text-center">
                     <div className="mb-4">
                       <img
                         src={socio_2.src}
@@ -412,7 +410,7 @@ export default function ConstructoraLanding() {
         </section>
 
         {/* Testimonios */}
-        <section className="py-10 lg:py-20 bg-gray-50">
+        <section id="testimonios" className="py-10 lg:py-20 bg-gray-50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -503,7 +501,7 @@ export default function ConstructoraLanding() {
                     <Phone className="h-5 w-5 text-orange-600" />
                     <div>
                       <p className="font-semibold text-gray-900">Teléfono</p>
-                      <p className="text-gray-600">+52 (55) 1234-5678</p>
+                      <p className="text-gray-600">+54 (9) 381-6368889</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -511,7 +509,7 @@ export default function ConstructoraLanding() {
                     <div>
                       <p className="font-semibold text-gray-900">Email</p>
                       <p className="text-gray-600">
-                        contacto@constructorapro.com
+                        contacto@rainconstructora.com
                       </p>
                     </div>
                   </div>
@@ -520,7 +518,7 @@ export default function ConstructoraLanding() {
                     <div>
                       <p className="font-semibold text-gray-900">Dirección</p>
                       <p className="text-gray-600">
-                        Av. Construcción 123, Ciudad de México
+                        Chiclana 132, San Miguel de Tucumán, Argentina
                       </p>
                     </div>
                   </div>
@@ -597,20 +595,20 @@ export default function ConstructoraLanding() {
               {/* Redes Sociales */}
               <div className="flex space-x-4">
                 <a
-                  href="https://instagram.com/constructorapro"
+                  href="https://instagram.com/rainconstructora"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-orange-600 hover:text-gray-400 transition-colors"
                   aria-label="Instagram">
-                  <Instagram className="h-5 w-5" />
+                  <Instagram className="h-6 w-6" />
                 </a>
                 <a
-                  href="https://facebook.com/constructorapro"
+                  href="https://facebook.com/rainconstructora"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-red-600 transition-colors"
+                  className="text-orange-600 hover:text-gray-400 transition-colors"
                   aria-label="Facebook">
-                  <Facebook className="h-5 w-5" />
+                  <Facebook className="h-6 w-6" />
                 </a>
               </div>
             </div>
@@ -640,21 +638,21 @@ export default function ConstructoraLanding() {
                     <li>
                       <a
                         href="#proyectos"
-                        className="hover:text-red-600 transition-colors">
+                        className="hover:text-orange-600 transition-colors">
                         Proyectos
                       </a>
                     </li>
                     <li>
                       <a
                         href="#testimonios"
-                        className="hover:text-red-600 transition-colors">
+                        className="hover:text-orange-600 transition-colors">
                         Testimonios
                       </a>
                     </li>
                     <li>
                       <a
                         href="#contacto"
-                        className="hover:text-red-600 transition-colors">
+                        className="hover:text-orange-600 transition-colors">
                         Contacto
                       </a>
                     </li>
@@ -665,8 +663,8 @@ export default function ConstructoraLanding() {
                   <ul className="space-y-2 text-sm text-gray-400">
                     <li>+54 (9) 381-6368889</li>
                     <li>contacto@rainconstructora.com</li>
-                    <li>Chiclana 132</li>
-                    <li>San Miguel de Tucunán</li>
+                    <li>Chiclana 132, San Miguel de Tucumán</li>
+                    <li>Argentina</li>
                   </ul>
                 </div>
               </div>
@@ -698,7 +696,7 @@ export default function ConstructoraLanding() {
 
           {/* Botón de WhatsApp */}
           <a
-            href="https://wa.me/5215512345678?text=Hola,%20me%20interesa%20solicitar%20información%20sobre%20sus%20servicios%20de%20construcción"
+            href="https://wa.me/5493816368889?text=Hola,%20soy%20de%20ConstructoraPro.%20Me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios%20de%20construcción%20y%20obtener%20una%20cotización%20para%20mi%20proyecto.%20¿Podrían%20ayudarme?"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"

@@ -41,32 +41,32 @@ export default function ConstructoraLanding() {
             <img
               src={LogoNameV1.src}
               alt="Logo de la Constructora"
-              className="w-auto h-10"
+              className="w-auto h-10 cursor-pointer"
             />
           </div>
           <nav className="hidden md:flex items-center space-x-6">
             <a
               href="#servicios"
-              className="text-sm font-medium hover:text-orange-600 transition-colors">
+              className="text-sm font-medium hover:text-[#FC0835] transition-colors">
               Servicios
             </a>
             <a
               href="#proyectos"
-              className="text-sm font-medium hover:text-orange-600 transition-colors">
+              className="text-sm font-medium hover:text-[#FC0835] transition-colors">
               Proyectos
             </a>
             <a
               href="#nosotros"
-              className="text-sm font-medium hover:text-orange-600 transition-colors">
+              className="text-sm font-medium hover:text-[#FC0835] transition-colors">
               Nosotros
             </a>
             <a
               href="#contacto"
-              className="text-sm font-medium hover:text-orange-600 transition-colors">
+              className="text-sm font-medium hover:text-[#FC0835] transition-colors">
               Contacto
             </a>
           </nav>
-          <Button className="bg-orange-600 hover:bg-orange-700 mr-4 lg:mr-0">
+          <Button className="bg-[#FC0835] hover:opacity-90 mr-4 lg:mr-0">
             <a href="#contacto">Cotizar Proyecto</a>
           </Button>
         </div>
@@ -108,7 +108,7 @@ export default function ConstructoraLanding() {
                 <div>
                   <Button
                     size="lg"
-                    className="bg-orange-600 hover:opacity-90"
+                    className="bg-[#FC0835] hover:opacity-90"
                     asChild>
                     <a href="#proyectos">Ver Proyectos</a>
                   </Button>
@@ -141,7 +141,7 @@ export default function ConstructoraLanding() {
               <div className="space-y-2">
                 <Badge
                   variant="outline"
-                  className="border-orange-200 text-orange-700">
+                  className="border-[#FC0835] text-[#FC0835]">
                   Nuestros Servicios
                 </Badge>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
@@ -156,7 +156,7 @@ export default function ConstructoraLanding() {
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
               <Card className="border-orange-100 hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center">
-                  <Home className="h-12 w-12 mx-auto text-orange-600 mb-4" />
+                  <Home className="h-12 w-12 mx-auto text-[#FC0835] mb-4" />
                   <CardTitle className="text-gray-900">
                     Construcción de Casas
                   </CardTitle>
@@ -184,7 +184,7 @@ export default function ConstructoraLanding() {
 
               <Card className="border-orange-100 hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center">
-                  <Building2 className="h-12 w-12 mx-auto text-orange-600 mb-4" />
+                  <Building2 className="h-12 w-12 mx-auto text-[#FC0835] mb-4" />
                   <CardTitle className="text-gray-900">
                     Edificios Comerciales
                   </CardTitle>
@@ -212,7 +212,7 @@ export default function ConstructoraLanding() {
 
               <Card className="border-orange-100 hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center">
-                  <Wrench className="h-12 w-12 mx-auto text-orange-600 mb-4" />
+                  <Wrench className="h-12 w-12 mx-auto text-[#FC0835] mb-4" />
                   <CardTitle className="text-gray-900">Refacciones</CardTitle>
                   <CardDescription>
                     Remodelaciones, ampliaciones y mantenimiento
@@ -246,7 +246,7 @@ export default function ConstructoraLanding() {
               <div className="space-y-2">
                 <Badge
                   variant="outline"
-                  className="border-orange-200 text-orange-700">
+                  className="border-[#FC0835] text-[#FC0835]">
                   Nuestros Proyectos
                 </Badge>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
@@ -313,7 +313,7 @@ export default function ConstructoraLanding() {
               <div className="space-y-2">
                 <Badge
                   variant="outline"
-                  className="border-orange-200 text-orange-700">
+                  className="border-[#FC0835] text-[#FC0835]">
                   Sobre Nosotros
                 </Badge>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
@@ -330,14 +330,14 @@ export default function ConstructoraLanding() {
             <div className="flex justify-center items-center gap-8 lg:gap-16 mb-12">
               <div className="text-center space-y-2">
                 <div className="flex items-center justify-center space-x-2">
-                  <Users className="h-5 w-5 text-red-600" />
+                  <Users className="h-5 w-5 text-[#FC0835]" />
                   <span className="font-semibold text-slate-700">500+</span>
                 </div>
                 <p className="text-sm text-gray-600">Proyectos completados</p>
               </div>
               <div className="text-center space-y-2">
                 <div className="flex items-center justify-center space-x-2">
-                  <Award className="h-5 w-5 text-red-600" />
+                  <Award className="h-5 w-5 text-[#FC0835]" />
                   <span className="font-semibold text-slate-700">15+</span>
                 </div>
                 <p className="text-sm text-gray-600">Años de experiencia</p>
@@ -370,7 +370,7 @@ export default function ConstructoraLanding() {
                     <h4 className="text-xl font-bold text-gray-900 mb-2">
                       María Inés Pisculichi
                     </h4>
-                    <p className="text-orange-600 font-semibold mb-3">
+                    <p className="text-[#FC0835] font-semibold mb-3">
                       Ingeniera Civil - Socia
                     </p>
                     <p className="text-gray-600 text-sm">
@@ -394,7 +394,7 @@ export default function ConstructoraLanding() {
                     <h4 className="text-xl font-bold text-gray-900 mb-2">
                       Rafael Rotger
                     </h4>
-                    <p className="text-orange-600 font-semibold mb-3">
+                    <p className="text-[#FC0835] font-semibold mb-3">
                       Arquitecto - Socio
                     </p>
                     <p className="text-gray-600 text-sm">
@@ -416,7 +416,7 @@ export default function ConstructoraLanding() {
               <div className="space-y-2">
                 <Badge
                   variant="outline"
-                  className="border-orange-200 text-orange-700">
+                  className="border-[#FC0835] text-[#FC0835]">
                   Testimonios
                 </Badge>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
@@ -446,7 +446,7 @@ export default function ConstructoraLanding() {
                   <p className="text-gray-600">
                     "Excelente trabajo, cumplieron con todos los tiempos y la
                     calidad superó nuestras expectativas. Recomiendo
-                    ConstructoraPro sin dudarlo."
+                    Constructora Rain sin dudarlo."
                   </p>
                 </CardContent>
               </Card>
@@ -483,7 +483,7 @@ export default function ConstructoraLanding() {
               <div className="space-y-2">
                 <Badge
                   variant="outline"
-                  className="border-orange-200 text-orange-700">
+                  className="border-[#FC0835] text-[#FC0835]">
                   Contacto
                 </Badge>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
@@ -566,7 +566,7 @@ export default function ConstructoraLanding() {
                     </label>
                     <Textarea placeholder="Cuéntanos sobre tu proyecto..." />
                   </div>
-                  <Button className="w-full bg-orange-600 hover:bg-orange-700">
+                  <Button className="w-full bg-[#FC0835] hover:opacity-90">
                     Enviar Solicitud
                   </Button>
                 </CardContent>
@@ -598,7 +598,7 @@ export default function ConstructoraLanding() {
                   href="https://instagram.com/rainconstructora"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-orange-600 hover:text-gray-400 transition-colors"
+                  className="text-[#FC0835] hover:text-gray-400 transition-colors"
                   aria-label="Instagram">
                   <Instagram className="h-6 w-6" />
                 </a>
@@ -606,7 +606,7 @@ export default function ConstructoraLanding() {
                   href="https://facebook.com/rainconstructora"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-orange-600 hover:text-gray-400 transition-colors"
+                  className="text-[#FC0835] hover:text-gray-400 transition-colors"
                   aria-label="Facebook">
                   <Facebook className="h-6 w-6" />
                 </a>
@@ -631,28 +631,28 @@ export default function ConstructoraLanding() {
                     <li>
                       <a
                         href="#nosotros"
-                        className="hover:text-red-600 transition-colors">
+                        className="hover:text-[#FC0835] transition-colors">
                         Sobre Nosotros
                       </a>
                     </li>
                     <li>
                       <a
                         href="#proyectos"
-                        className="hover:text-orange-600 transition-colors">
+                        className="hover:text-[#FC0835] transition-colors">
                         Proyectos
                       </a>
                     </li>
                     <li>
                       <a
                         href="#testimonios"
-                        className="hover:text-orange-600 transition-colors">
+                        className="hover:text-[#FC0835] transition-colors">
                         Testimonios
                       </a>
                     </li>
                     <li>
                       <a
                         href="#contacto"
-                        className="hover:text-orange-600 transition-colors">
+                        className="hover:text-[#FC0835] transition-colors">
                         Contacto
                       </a>
                     </li>

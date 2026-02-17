@@ -9,11 +9,13 @@ export default function Footer() {
         <div className="grid gap-8 lg:grid-cols-4">
           <div className="space-y-4 lg:col-span-1">
             <div className="flex items-center">
-              <img
-                src={LogoNameV2.src}
-                alt="Logo de la Constructora"
-                className="w-auto h-6"
-              />
+              <a href="/" aria-label="Recargar página de inicio">
+                <img
+                  src={LogoNameV2.src}
+                  alt="Logo de la Constructora"
+                  className="w-auto h-6"
+                />
+              </a>
             </div>
             <p className="text-sm text-gray-400">
               Construyendo sueños con calidad y confianza desde hace más de 15

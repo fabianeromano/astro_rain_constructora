@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge";
 import ModernHouse from "@/assets/modern_house.jpg";
 import CommercialBuilding from "@/assets/commercial_building.jpg";
@@ -11,12 +10,11 @@ export default function Projects() {
           <div className="space-y-2">
             <Badge
               variant="outline"
-              className="border-[#FC0835] text-[#FC0835]"
-            >
+              className="border-[#FC0835] text-[#FC0835]">
               Nuestros Proyectos
             </Badge>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
-              Proyectos que nos enorgullecen
+              Últimos Proyectos
             </h2>
             <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Cada proyecto es único y refleja nuestro compromiso con la
@@ -65,6 +63,29 @@ export default function Projects() {
               <div className="flex space-x-2">
                 <Badge variant="secondary">Comercial</Badge>
                 <Badge variant="secondary">12 Pisos</Badge>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <img
+              src={ModernHouse.src}
+              width="600"
+              height="400"
+              alt="Casa moderna"
+              className="aspect-video overflow-hidden rounded-xl object-cover"
+            />
+            <div className="space-y-2">
+              <h3 className="text-xl font-bold text-gray-900">
+                Residencia Los Pinos
+              </h3>
+              <p className="text-gray-600">
+                Casa moderna de 350m² con acabados de lujo y jardín
+                paisajístico.
+              </p>
+              <div className="flex space-x-2">
+                <Badge variant="secondary">Casa Residencial</Badge>
+                <Badge variant="secondary">350m²</Badge>
               </div>
             </div>
           </div>

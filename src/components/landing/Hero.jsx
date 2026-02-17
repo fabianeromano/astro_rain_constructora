@@ -1,26 +1,33 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+// import { Badge } from "@/components/ui/badge";
 import { CheckCircle } from "lucide-react";
-import Img_1 from "@/assets/img_1.jpg";
+// import Img_1 from "@/assets/img_1.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative py-20 lg:py-32 bg-gradient-to-br from-slate-700 to-slate-600 overflow-hidden">
-      {/* Imagen de fondo */}
+    <section className="relative py-20 lg:py-32 overflow-hidden">
+      {/* Video de fondo */}
       <div className="absolute inset-0 z-0">
-        <img
+        {/* <img
           src={Img_1.src}
           width="1200"
           height="800"
           alt="Construcción en progreso"
           className="object-cover w-full h-full opacity-30"
         />
-        <div className="absolute inset-0 bg-slate-800/20"></div>
+        <div className="absolute inset-0 bg-slate-800/20"></div> */}
+        <video
+          src="https://video.wixstatic.com/video/11062b_4f14b356c1df4854968cf1cc94ca98c5/1080p/mp4/file.mp4"
+          className="object-cover w-full h-full opacity-95"
+          autoPlay
+          loop
+          muted
+          playsInline></video>
       </div>
 
       <div className="container px-4 md:px-6 relative z-10">
         <div className="flex items-center justify-center min-h-[60vh]">
-          <div className="flex flex-col justify-center items-start space-y-4 max-w-4xl">
+          <div className="flex flex-col justify-center items-start space-y-4 max-w-4xl bg-black/20 p-6 rounded-lg">
             <div className="space-y-2">
               {/* <Badge
                 variant="outline"
@@ -58,10 +65,6 @@ export default function Hero() {
               <div className="flex items-center space-x-1">
                 <CheckCircle className="h-4 w-4 text-green-400" />
                 <span>Compromiso</span>
-              </div>
-              <div className="flex items-center space-x-1">
-                <CheckCircle className="h-4 w-4 text-green-400" />
-                <span>Calidad Humana</span>
               </div>
             </div>
           </div>

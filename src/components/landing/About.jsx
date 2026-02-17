@@ -1,8 +1,4 @@
-
-import {
-  Card,
-  CardContent
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, Award } from "lucide-react";
 import socio_1 from "@/assets/socio_1.jpg";
@@ -16,17 +12,17 @@ export default function About() {
           <div className="space-y-2">
             <Badge
               variant="outline"
-              className="border-[#FC0835] text-[#FC0835]"
-            >
-              Sobre Nosotros
+              className="border-[#FC0835] text-[#FC0835]">
+              Nosotros
             </Badge>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
-              15 años construyendo confianza
+              Somos RAIN
             </h2>
-            <p className="max-w-[800px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Somos una empresa familiar con más de 15 años de experiencia en
-              el sector de la construcción. Nos especializamos en proyectos
-              residenciales y comerciales de alta calidad.
+            <p className="max-w-[800px] text-left text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Una empresa joven de Tucumán. Contamos con un equipo de
+              profesionales con experiencia en el mercado local.{" "}
+              <b>Diseñamos, Construimos Y Comercializamos</b> obras nuevas,
+              remodelaciones y ampliaciones de manera integral en todo Tucumán.
             </p>
           </div>
         </div>

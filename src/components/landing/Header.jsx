@@ -7,11 +7,13 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center pl-4 md:pl-6">
-          <img
-            src={LogoNameV1.src}
-            alt="Logo de la Constructora"
-            className="w-auto h-10 cursor-pointer"
-          />
+          <a href="/" aria-label="Recargar página de inicio">
+            <img
+              src={LogoNameV1.src}
+              alt="Logo de la Constructora"
+              className="w-auto h-10"
+            />
+          </a>
         </div>
         <nav className="hidden md:flex items-center space-x-6">
           <a

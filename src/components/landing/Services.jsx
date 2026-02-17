@@ -1,4 +1,3 @@
-
 import {
   Card,
   CardContent,
@@ -7,7 +6,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Building2, Home, Wrench, CheckCircle } from "lucide-react";
+import { Building2, Home, Wrench, CheckCircle, UsersRound } from "lucide-react";
+import Service1 from "@/assets/service1.avif";
+import Service2 from "@/assets/service2.avif";
+import Service3 from "@/assets/service3.avif";
+import Img1 from "@/assets/img_1.jpg";
 
 export default function Services() {
   return (
@@ -17,8 +20,7 @@ export default function Services() {
           <div className="space-y-2">
             <Badge
               variant="outline"
-              className="border-[#FC0835] text-[#FC0835]"
-            >
+              className="border-[#FC0835] text-[#FC0835]">
               Nuestros Servicios
             </Badge>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
@@ -30,86 +32,155 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+        <div className="mx-auto grid w-full max-w-5xl items-start gap-8 py-12 sm:grid-cols-2 md:grid-cols-4 lg:gap-12">
+          {/* Service 1: Vivienda */}
+          <div className="flex flex-col items-center text-center">
+            <Home className="h-12 w-12 text-[#FC0835] mb-4" />
+            <h3 className="font-bold text-lg mb-2">Vivienda</h3>
+            <p className="text-sm text-gray-600 mb-4 h-16">
+              Diseño y construcción de casas residenciales personalizadas.
+            </p>
+          </div>
+          {/* Service 2: Comercial/Industria */}
+          <div className="flex flex-col items-center text-center">
+            <Building2 className="h-12 w-12 text-[#FC0835] mb-4" />
+            <h3 className="font-bold text-lg mb-2">
+              Instituciones e Industria
+            </h3>
+            <p className="text-sm text-gray-600 mb-4 h-16">
+              Proyectos comerciales, oficinas, naves industriales y edificios.
+            </p>
+          </div>
+          {/* Service 3: Refacciones */}
+          <div className="flex flex-col items-center text-center">
+            <Wrench className="h-12 w-12 text-[#FC0835] mb-4" />
+            <h3 className="font-bold text-lg mb-2">
+              Refacciones y mantenimiento
+            </h3>
+            <p className="text-sm text-gray-600 mb-4 h-16">
+              Remodelaciones, ampliaciones y mantenimiento general.
+            </p>
+          </div>
+          {/* Service 4: Inversores */}
+          <div className="flex flex-col items-center text-center">
+            <UsersRound className="h-12 w-12 text-[#FC0835] mb-4" />
+            <h3 className="font-bold text-lg mb-2">Inversores</h3>
+            <p className="text-sm text-gray-600 mb-4 h-16">
+              Asesoramiento y gestión de proyectos de inversión inmobiliaria.
+            </p>
+          </div>
+        </div>
+
+        {/* <div className="lg:px-40 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-0">
+                <img
+                  src={ModernHouse.src}
+                  alt="Diseño arquitectónico"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <CardTitle className="mb-2 text-xl">Diseño</CardTitle>
+                  <CardDescription>
+                    Diseños eficientes, con criterio estético y racional. Nuestros
+                    diseños se personalizan trabajando en conjunto con cada
+                    cliente, para obtener una máxima experiencia y satisfacción de
+                    cada usuario.
+                  </CardDescription>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-0">
+                <img
+                  src={CommercialBuilding.src}
+                  alt="Dirección de obra"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <CardTitle className="mb-2 text-xl">Dirección</CardTitle>
+                  <CardDescription>
+                    Nuestros profesionales dirigen y coordinan cada acción en
+                    nuestras obras, respondiendo al diseño constructivo y a
+                    criterio y experiencia desarrollados a lo largo de los años.
+                  </CardDescription>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-0">
+                <img
+                  src={Img1.src}
+                  alt="Construcción"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <CardTitle className="mb-2 text-xl">Construcción</CardTitle>
+                  <CardDescription>
+                    Llevamos nuestros proyectos a la realidad, con calidad en la
+                    selección de materiales y mano de obra eficiente y
+                    especializada.
+                  </CardDescription>
+                </div>
+              </CardContent>
+            </Card>
+          </div> */}
+
+        <div className="mx-auto grid max-w-5xl items-start gap-6 lg:grid-cols-3 lg:gap-12">
           <Card className="border-orange-100 hover:shadow-lg transition-shadow">
-            <CardHeader className="text-center">
-              <Home className="h-12 w-12 mx-auto text-[#FC0835] mb-4" />
-              <CardTitle className="text-gray-900">
-                Construcción de Casas
+            <CardContent>
+              <img
+                src={Service1.src}
+                alt="Diseño arquitectónico"
+                className="w-full h-48 object-cover"
+              />
+              <CardTitle className="text-gray-900 py-2 text-xl">
+                Diseño
               </CardTitle>
               <CardDescription>
-                Diseño y construcción de casas residenciales personalizadas
+                Diseños eficientes, con criterio estético y racional. Nuestros
+                diseños se personalizan trabajando en conjunto con cada cliente,
+                para obtener una máxima experiencia y satisfacción de cada
+                usuario.
               </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Diseño arquitectónico</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Construcción llave en mano</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Acabados de lujo</span>
-                </li>
-              </ul>
             </CardContent>
           </Card>
 
           <Card className="border-orange-100 hover:shadow-lg transition-shadow">
-            <CardHeader className="text-center">
-              <Building2 className="h-12 w-12 mx-auto text-[#FC0835] mb-4" />
-              <CardTitle className="text-gray-900">
-                Edificios Comerciales
+            <CardContent>
+              <img
+                src={Service2.src}
+                alt="Diseño arquitectónico"
+                className="w-full h-48 object-cover"
+              />
+              <CardTitle className="text-gray-900 py-2 text-xl">
+                Dirección
               </CardTitle>
               <CardDescription>
-                Construcción de oficinas, locales comerciales y edificios
+                Nuestros profesionales dirigen y coordinan cada acción en
+                nuestras obras, respondiendo al diseño constructivo y a criterio
+                y experiencia desarrollados a lo largo de los años.
               </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Proyectos comerciales</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Edificios corporativos</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Centros comerciales</span>
-                </li>
-              </ul>
             </CardContent>
           </Card>
 
           <Card className="border-orange-100 hover:shadow-lg transition-shadow">
-            <CardHeader className="text-center">
-              <Wrench className="h-12 w-12 mx-auto text-[#FC0835] mb-4" />
-              <CardTitle className="text-gray-900">Refacciones</CardTitle>
-              <CardDescription>
-                Remodelaciones, ampliaciones y mantenimiento
-              </CardDescription>
-            </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Remodelaciones integrales</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Ampliaciones</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                  <span>Mantenimiento preventivo</span>
-                </li>
-              </ul>
+              <img
+                src={Service3.src}
+                alt="Diseño arquitectónico"
+                className="w-full h-48 object-cover"
+              />
+              <CardTitle className="text-gray-900 py-2 text-xl">
+                Construcción
+              </CardTitle>
+              <CardDescription>
+                Llevamos nuestros proyectos a la realidad, con calidad en la
+                selección de materiales y mano de obra eficiente y
+                especializada.
+              </CardDescription>
             </CardContent>
           </Card>
         </div>
